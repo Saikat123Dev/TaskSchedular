@@ -1,5 +1,5 @@
 import prisma from "@/app/lib/db";
-import { nylas } from "@/app/lib/nylas";
+
 import { notFound } from "next/navigation";
 import React from "react";
 import { addDays } from "date-fns";
@@ -197,7 +197,7 @@ const MeetingPagee = async ({
               className="hidden md:block h-full w-[1px]"
             />
 
-            <TimeSlots selectedDate={selectedDate} userName={params.username} />
+            <TimeSlots selectedDate={selectedDate} userName={params.username}  meetingDuration={}/>
           </CardContent>
         </Card>
       )}
